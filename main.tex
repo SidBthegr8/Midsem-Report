@@ -1,0 +1,91 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2024
+
+
+% ready for submission
+\usepackage[preprint]{neurips_2024}
+
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2024}
+
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2024}
+
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2024}
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage[numbers]{natbib}
+
+\title{Out of Distribution Detection for Rare Skin Diseases}
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{
+  Karthikeya Jatoth \\
+  MSCS student \\
+  UNC CS department \\
+  \texttt{karthikeya.jatoth@example.com} \\
+  \And
+  Shreyas Bhat \\
+  PhD student \\
+  UNC CS department \\
+  \texttt{shreyas.bhat@example.com} \\
+  \And
+  Sidharth Bankupalle \\
+  MSCS Student \\
+  UNC CS department \\
+  \texttt{bankupal@cs.unc.edu} \\
+  \And
+  Yashas Majmudar \\
+  MSCS Student \\
+  UNC CS department \\
+  \texttt{yashas.majmudar@example.com}
+}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\begin{abstract}
+   Out-of-distribution methods have gained significant attention in the safe deployment of neural networks. However, a critical research gap exists: most methods and analyses, when applied to image analysis, have been developed for natural images, neglecting medical images. This proposal addresses this gap by focusing on OOD detection in medical imaging, particularly for rare disease detection
+\end{abstract}
+
+
+\section{Introduction}
+Recently, machine learning techniques have been applied to perform a variety of tasks over the past few years. Applications posing a variety of tasks in wide variety of fields ranging from \{less important\} to crucial problems in medical domain. However, these solutions face with many crucial defects that hinder their usability in domains, especially in critical medical related domain where decision are vital. One such problem is detecting scenarios which the model hasn't seen before. Such scenarios are often linked to model's performance and detecting such instance will further enhance the understanding of model capabilities and deployability.
+\section{Related works}
+In contrast to natural image analysis, a systematic evaluation for OOD detection for dermatological images remains absent, leaving practitioners needing clarification about which approach would work the best  \cite{Cao2022}. The paper \cite{Mahmood2021} addresses OOD from brain scans but we would like to benchmark this on various medical datasets. Recent advances in this field have come from  \cite{Du2022}, \cite{Sun2022} which works by using a distance metric in the latent space. These models work on underlying assumptions and we assume that these models will not be able to work in some scenarios and we aim to tackle this. We would like to extend this method to work in those scenarios.
+\section{Methods}
+\section{Experiments}
+\section{Conclusion}
+\bibliographystyle{plainnat}
+\bibliography{Bib}
+\end{document}
